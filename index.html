@@ -232,18 +232,28 @@
       <div>
         <h2>Demande de disponibilité</h2>
         <p>Indiquez vos dates et le nombre de voyageurs. Nous répondons rapidement.</p>
-        <form action="mailto:sakurivier@mail.fr" method="post" enctype="text/plain" class="card" style="padding:16px">
-          <label>Nom<br><input name="Nom" required style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:8px"></label><br><br>
-          <label>Email<br><input name="Email" type="email" required style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:8px"></label><br><br>
-          <label>Dates & message<br><textarea name="Message" rows="4" placeholder="Dates, nb voyageurs, questions…" style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:8px"></textarea></label><br><br>
-          <button class="btn primary" type="submit">Envoyer la demande</button>
-        </form>
+      <form
+  action="https://formspree.io/f/xojnjvvn"
+  method="POST"
+>
+  <label>
+    Votre  email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Votre  message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Envoyer la demande</button>
+
       </div>
       <div class="card">
         <div class="p">
           <h3>Tarifs </h3>
-          <p>Nous consulter. Votre hôte, Patricia, sera ravie de vous renseigner.</p>
-        </div>
+          <p>Nous consulter. </p>
+           <p>Votre hôte, Patricia, sera ravie de vous renseigner.</p>
+		</div>
       </div>
     </section>
   </main>
